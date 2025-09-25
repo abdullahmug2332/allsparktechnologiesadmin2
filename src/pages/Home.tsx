@@ -145,8 +145,10 @@ const EditHomeData: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement>,
     imageKey: string
   ) => {
-    const file = e.target.files?.[0];
+    const file = e.target.files?.[0]; 
     if (!file) return;
+
+
 
     const formData = new FormData();
     formData.append("image", file);
